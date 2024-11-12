@@ -59,14 +59,75 @@ for country, capital in capitals.items():
     print(f"The capital of {country} is {capital}")
 
 #Exercise 4
+countries= capitals.keys()
+print("these are the countries: ", countries)
+
+cities= capitals.values()
+print("these are the countries: ", cities)
+
+items= capitals.items()
+print("these are the countries: ", items)
+
+get=capitals.get("Germany")
+print("these is no Germany, ", get,"!")
 
 
 #Exercise 5
+
+
+
 
 print("Section 3: Sets")
 
 #Exercise 1
+my_set={1,2,3,4,5}
+my_set.add(6)
+my_set.add(3)  # won't add because it is a duplicate
+my_set.remove(2)
+print("this is your new set:\n",my_set)
+
 #Exercise 2
+set_a = {1, 2, 3, 4}
+set_b = {3, 4, 5, 6}
+
+set_c = set_a.union(set_b)
+print(set_c)
+
+set_c = set_a.intersection(set_b)
+print("the duplicates are",set_c)
+
+set_c = set_a.difference(set_b)
+set_d = set_b.difference(set_a)
+print(set_c,set_d)
+
+set_e = set_a.symmetric_difference(set_b)
+print(set_e)
+
 #Exercise 3
+numbers = [1, 2, 2, 3, 4, 4, 5]
+#new_set = list(set(numbers))
+new_set = set(numbers)
+
+print(new_set)
+
 #Exercise 4
+if 3 in set_a:
+     True
+     print("The number is in the set")
+if not 6 in set_a:
+    True
+    print("The number is not in the set")
+
 #Exercise 5
+set_b.add(7)
+print(set_b)
+
+set_b.remove(4)
+print(set_b)
+
+set_a.discard(1)
+print(set_a)
+
+
+
+

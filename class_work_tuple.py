@@ -69,13 +69,41 @@ items= capitals.items()
 print("these are the countries: ", items)
 
 get=capitals.get("Germany")
-print("these is no Germany, ", get,"!")
+print("there is no Germany, ", get,"!")
 
 
 #Exercise 5
+def count_chars(text):
+
+    char_counter = {}
+
+    for char in text:
+        if char in char_counter:
+            char_counter[char] = char_counter[char] + 1
+        else:
+            char_counter[char] = 1
+    return char_counter 
+
+text = 'hello'
+result = count_chars(text)
+print(result)
+
+
+text1 = 'wassup?'
+number_list = list(text1)
+print(number_list)
+dict1 = {}
+count = 0
+for char in number_list:
+    if char in dict1:
+        dict1[char] = dict1[char] + 1
+        #count = count + 1
+    else:
+        dict1[char] = 1
 
 
 
+print(number_list," \n" , dict1)
 
 print("Section 3: Sets")
 
